@@ -8,6 +8,6 @@ git clone https://github.com/avijeetpandey/react-electron-starter.git
 cd react-electron-starter
 ```
 
-After moving into the directory run the following commands
-**npm start** -> This will launch the default react web app
-**npm run electron** -> This will launch the electron app
+After moving into the directory run the following commands 
+- **npm start** -> This will launch the default react web app
+- **npm run electron** -> This will launch the electron app
