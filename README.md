@@ -6,6 +6,7 @@ This is a boiler plate code for creating react-electron based application
 ```
 git clone https://github.com/avijeetpandey/react-electron-starter.git
 cd react-electron-starter
+npm install
 ```
 
 After moving into the directory run the following commands 
