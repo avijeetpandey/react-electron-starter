@@ -25,6 +25,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "react-start" : "react-scripts start",
     "start": "cross-env BROWSER=none npm run react-start",
     "build": "react-scripts build",
     "test": "react-scripts test",
