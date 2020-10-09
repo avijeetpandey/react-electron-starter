@@ -1,20 +1,35 @@
 {
   "name": "react-electron-starter",
+  "main": "src/start.js",
   "version": "0.1.0",
+  "homepage": "./",
+  "build": {
+    "appId": "erdownloader",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "category": "productivity"
+    }
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "cross-env": "^7.0.2",
+    "electron": "^10.1.3",
+    "electron-is-dev": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none npm run react-start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "cross-env NODE_ENV=dev nodemon --exec \"\"electron .\"\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron-builder": "^22.8.1",
+    "electron-reload": "^1.5.0",
+    "nodemon": "^2.0.4"
   }
 }
